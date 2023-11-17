@@ -47,9 +47,9 @@ const simulador = () => {
          * 
         teniendo en cuenta que la entidad bancaria pagará tasas de interés mensual del 0.8 % para 1 año, 1.3 % para 2 años y 1.7 % para 3 años.
         */
-    console.log("total a invertir " + montoAInvertir);
+    // console.log("total a invertir " + montoAInvertir);
     ganancia = parseFloat( (montoAInvertir * interes) / 100 * (tiempoDeInversion * 12));
-    console.log("ganancia " + montoAInvertir * interes);
+    // console.log("ganancia " + montoAInvertir * interes);
 
     showInteres.textContent = `${interes}%`;
 
