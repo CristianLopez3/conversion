@@ -1,13 +1,11 @@
-@font-face {
-    font-family: 'Montserrat'; 
-    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
-}
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #simulator{
@@ -22,7 +20,7 @@
 h1{
     font-size: 34px;
     font-weight: 700;
-    color: #1c9882;
+    color: orange;
     text-align: center;
     padding-bottom: 50px;
     border-bottom: 2px solid #7a93ab;
@@ -92,17 +90,17 @@ h2{
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: #1c9882;
+    background: orange;
     color: #fff;
-    border: 1px solid #1c9882;
+    border: 1px solid orange;
     transition: .4s;
     cursor: pointer;
 }
 
 .form button:hover{
     background: #f5f8fa;
-    border: 1px solid #1c9882;
-    color: #1c9882;
+    border: 1px solid orange;
+    color: orange;
 }
 
 input, select{
@@ -150,13 +148,13 @@ input::placeholder {
 }
 
 .right .post-simulation h3 span{
-    color: #1c9882;
+    color: orange;
     font-weight: 600;
     font-size: 24px;
 }
 
 .right .total{
-    background: #1c988259;
+    background: orange59;
     padding: 30px;
 }
 
@@ -179,7 +177,7 @@ input::placeholder {
 
 .notificacion{
     padding: 20px;
-    border: 1px solid #1c9882;
+    border: 1px solid orange;
     margin-top: 40px;
 }
 
