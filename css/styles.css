@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 *{
     margin: 0;
@@ -90,6 +90,7 @@ h2{
     display: block;
     width: 97%;
     padding: 14px 80px;
+    border-radius: 10px;
     background: orange;
     color: #fff;
     border: 1px solid orange;
@@ -105,11 +106,13 @@ h2{
 
 input, select{
     padding: 14px 30px;
+    border-radius: 10px;
     background: #f5f8fa;
     border: 0;
     border-bottom: 2px solid #7a93ab;
     outline: none;
 }
+
 input::placeholder {
     color: #000; /* Cambia este valor al color que desees */
 }
@@ -124,7 +127,8 @@ input::placeholder {
 }
 
 .right img{
-    max-width: 80%;
+    max-width: 60%;
+    filter: drop-shadow(10px 10px 10px #000);
 }
 
 .right .post-simulation {
@@ -188,3 +192,4 @@ input::placeholder {
 .notificacion h5 span{
     font-weight: 700;
 }
+

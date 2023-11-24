@@ -54,12 +54,35 @@ const simulador = () => {
     showInteres.textContent = `${interes}%`;
 
     showTotal.textContent = montoAInvertir + ganancia;
-    console.log("total a invertir " + montoAInvertir);
-    console.log("total " +( montoAInvertir + ganancia));
+    //console.log("total a invertir " + montoAInvertir);
+    //console.log("total " +( montoAInvertir + ganancia));
     showGanancias.textContent = ganancia;
     
 
 
 
 }
+
+
+const textEl = document.getElementById("title");
+let text = textEl.textContent;
+let idx = 1; // Valor en el que se va a incrementar las letras
+let transitionComplete = false; // Bandera para controlar si la transición ya ha ocurrido
+
+writeText();
+
+function writeText() {
+  if (!transitionComplete) {
+    textEl.innerText = text.slice(0, idx) + "|";
+    idx++;
+
+    if (idx > text.length) {
+      transitionComplete = true; // Marcar la transición como completa
+      textEl.innerText = text.substring(0, text.length);
+    }
+
+    setTimeout(writeText, 200);
+  }
+}
+
 
